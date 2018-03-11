@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+
+<view>
+<button wx:if="{{scanResult==null}}" bindtap='bindScan'>扫一扫</button>
+<block wx:else>
+<text>扫描结果：{{scanResult}}</text>
+</block>
+
+</view>
+
