@@ -1,1 +1,11 @@
 /* pages/home/home.wxss */
+page{
+  height: 100%;
+}
+.normalMap{
+  display:block;
+  width: 100%;
+  height: 100%;
+
+
+}

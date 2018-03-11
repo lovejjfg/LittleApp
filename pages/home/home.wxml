@@ -1,9 +1,12 @@
 <!--pages/home/home.wxml-->
 
-<view>
-<button wx:if="{{scanResult==null}}" bindtap='bindScan'>扫一扫</button>
+<view class='container'>
+<!-- <button wx:if="{{scanResult==null}}" bindtap='bindScan'>扫一扫</button>
 <block wx:else>
 <text>扫描结果：{{scanResult}}</text>
+</block> -->
+<block wx:if="{{location!=null}}">
+<map class='normalMap' latitude='{{location.latitude}}' longitude='{{location.longitude}}' show-location='true'></map>
 </block>
 
 </view>

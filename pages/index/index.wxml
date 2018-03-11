@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<scroll-view>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -13,3 +14,4 @@
     <text class="user-motto">This is {{motto}}</text>
   </view>
 </view>
+</scroll-view>

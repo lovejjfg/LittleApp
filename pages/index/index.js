@@ -50,5 +50,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onPullDownRefresh: function () {
+        console.log("下拉刷新")
+        setTimeout(function(){
+          wx.stopPullDownRefresh()
+        },4000)
+       
   }
 })

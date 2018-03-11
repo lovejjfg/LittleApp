@@ -9,7 +9,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    scanResult:null
+    scanResult:null,
+    location:null
   },
   bindScan:function(){
     wx.scanCode({
@@ -18,6 +19,8 @@ Page({
         this.setData({
          scanResult:res.result
         })
+      },fail:(res)=>{
+
       }
     })
   },
@@ -35,6 +38,28 @@ Page({
   onReady: function () {
     wx.setNavigationBarTitle({
       title: '首页',
+    })
+    wx.getLocation({
+      type: 'wgs84',
+      success:  (res)=> {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        var speed = res.speed
+        var accuracy = res.accuracy
+        console.log(res)
+        this.setData({
+          location:res
+        })
+        
+      },
+      fail:function(res){
+        wx.openSetting({
+          
+        })
+        wx.showToast({
+          title: '获取位置失败',
+        })
+      }
     })
   },
 
