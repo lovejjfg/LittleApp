@@ -1,14 +1,14 @@
-const AV = require('./utils/av-live-query-weapp-min');
-AV.init({
-  appId: 'kWW77mt8A2k8UEwOfAe99ALl-gzGzoHsz',
-  appKey: 'TMtdHJqC0PMWX1fC04dMM1qV',
-});
+// const AV = require('./utils/av-live-query-weapp-min');
+// AV.init({
+//   appId: 'kWW77mt8A2k8UEwOfAe99ALl-gzGzoHsz',
+//   appKey: 'TMtdHJqC0PMWX1fC04dMM1qV',
+// });
 
 //app.js
 App({
   onLaunch: function () {
 
-    const user = AV.User.current();
+    // const user = AV.User.current();
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,11 +33,11 @@ App({
               this.globalData.userInfo = res.userInfo
               console.error("result11:" + res.userInfo.avatarUrl)
              
-              AV.User.loginWithWeapp().then(res1 => {
-                // this.globalData.user = user.toJSON();
-                console.error("result:" + res1.toJSON())
+              // AV.User.loginWithWeapp().then(res1 => {
+              //   // this.globalData.user = user.toJSON();
+              //   console.error("result:" + res1.toJSON())
 
-              }).catch(console.error);
+              // }).catch(console.error);
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {

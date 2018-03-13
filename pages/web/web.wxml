@@ -1,0 +1,6 @@
+<!--pages/web/web.wxml-->
+<view id='container'>
+//个人开发者目前不支持
+//https://readhub.me/topic/3XaRVanxIjd?from=mp
+<web-view src="https://readhub.me/topic/3XaRVanxIjd?from=mp"></web-view>
+</view>

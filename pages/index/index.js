@@ -15,6 +15,11 @@ Page({
       url: '../home/home'
     })
   },
+  bindListTap: function () {
+    wx.navigateTo({
+      url: '../list/list'
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

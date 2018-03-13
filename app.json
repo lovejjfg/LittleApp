@@ -1,15 +1,16 @@
 {
   "pages": [
+    "pages/list/list",
     "pages/index/index",
     "pages/logs/logs",
     "pages/home/home",
-    "pages/list/list"
+    "pages/web/web"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "兵工厂",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
   }
 }

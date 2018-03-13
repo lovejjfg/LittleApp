@@ -1,2 +1,11 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+
+<view class='container'>
+  <block wx:if="{{data!=null}}" wx:for="{{data}}" wx:for-item="news" wx:key="{{id}}">
+    <view class='list' id='{{news.id}}' data-title='{{news.title}}' bindtap='onItemClick'>
+      <text class='list_title'>{{news.title}}</text>
+      <text class='list_summary_3'>{{news.summary}}</text>
+    </view>
+  </block>
+    <image class='bottom' src="../../res/nocode.gif" hidden="{{!showBottom}}" ></image> 
+</view>
