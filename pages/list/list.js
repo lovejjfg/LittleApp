@@ -97,6 +97,9 @@ Page({
       },
       fail: (res) => {
         console.log(res.errMsg)
+        this.setData({
+          showBottom: false
+        })
       }
     })
   },
