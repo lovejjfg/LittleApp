@@ -1,14 +1,11 @@
 {
   "pages": [
     "pages/list/list",
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/home/home",
-    "pages/web/web"
+    "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "兵工厂",
+    "navigationBarTitleText": "实时新闻",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
